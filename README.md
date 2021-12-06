@@ -1,4 +1,4 @@
-# vuetvshows
+# vuetvshows by Dante Villarreal
 
 ## Project setup
 ```
