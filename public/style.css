@@ -26,7 +26,6 @@ body {
     color: var(--textColor); 
     text-align: center;
     font-size: 110%;
-    border: 1px dashed red;
 }
 
 .filler {
@@ -35,7 +34,6 @@ body {
 
 .appVue {
     flex: 1;
-    border: 1px solid yellow;
     padding: 0;
     display: flex;
     flex-flow: column wrap;
@@ -72,7 +70,6 @@ body {
     border-top-right-radius: 10 px;
     transition: transform 0.25s;
     height: fit-content;
-    border: 2px solid green;
     
 }
 
