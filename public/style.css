@@ -1,0 +1,99 @@
+/*
+Author: Dante Villarreal
+Date: 12/6/21 
+*/
+
+/********** Variables **********/
+:root {
+    --backgroundColor: #2A2D32;
+    --textColor: #C4C4C4;
+    --darkShadow: #1d2023;
+    --lightShadow: #373b41;   
+}
+
+/********** Containers **********/
+body {
+    margin: 0px
+}
+
+.pageContainer {
+    display: flex;
+    flex-flow: column;
+    
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: var(--backgroundColor);
+    color: var(--textColor); 
+    text-align: center;
+    font-size: 110%;
+    border: 1px dashed red;
+}
+
+.filler {
+    flex: 1;
+}
+
+.appVue {
+    flex: 1;
+    border: 1px solid yellow;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#vueHeader {
+    background-color: #032541;
+    box-shadow: 0px 7px 20px var(--darkShadow);
+    margin: 0;
+    border: 1px solid #032541;
+    padding-top: 0.2%;
+    margin-bottom: 1.5%;
+}
+
+/********** Cards **********/
+.cardContainer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5%;
+    margin-bottom: 0;
+    justify-content: center;
+    height: fit-content;
+}
+
+.card {
+    background-color: var(--backgroundColor);
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    box-shadow: 7px 7px 20px var(--darkShadow), 4px 4px 5px var(--darkShadow), 5px 5px 6px var(--backgroundColor),-4px -4px 10px var(--lightShadow), -2px -2px 3px var(--lightShadow);
+    /* border-left: 1px solid var(--lightShadow);
+    border-top: 1px solid var(--lightShadow); */
+    border-top-left-radius: 10 px;
+    border-top-right-radius: 10 px;
+    transition: transform 0.25s;
+    height: fit-content;
+    border: 2px solid green;
+    
+}
+
+.card:hover {
+    z-index: 1;
+    transform: scale(1.02);
+    box-shadow: 8px 8px 22px var(--darkShadow), 4px 4px 5px var(--darkShadow), 5px 5px 6px var(--darkShadow),-5px -5px 12px var(--lightShadow), -2px -2px 3px var(--lightShadow), 0px 7px 10px rgba(0, 153, 255, 0.4);
+    border-bottom: 1px solid rgba(0, 153, 255, 0.8);
+}
+
+.card-body {
+    background-color: var(--backgroundColor);
+}
+
+/********** Footer **********/
+footer {
+    color: var(--textColor);
+    background-color: #032541;
+    text-align: center;
+    font-size: small;
+    padding: 0.8%;
+    margin-top: 2%;
+    box-shadow: -1px -1px 4px var(--lightShadow);
+}
